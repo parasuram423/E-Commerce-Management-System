@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 420px;
+            margin: 60px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .signin {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .signin a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .signin a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>📝 Create Account</h2>
+
+        <form action="signup" method="post">
+
+            <label>First Name</label>
+            <input type="text"
+                   name="fname"
+                   placeholder="Enter your first name"
+                   required>
+
+            <label>Last Name</label>
+            <input type="text"
+                   name="lname"
+                   placeholder="Enter your last name"
+                   required>
+
+            <label>Username</label>
+            <input type="text"
+                   name="uname"
+                   placeholder="Choose a username"
+                   required>
+
+            <label>Login Password</label>
+            <input type="password"
+                   name="lpass"
+                   placeholder="Create a password"
+                   required>
+
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+        <div class="signin">
+            Already have an account?
+            <a href="signin">Sign In</a>
+        </div>
+
+        <a class="back" href="index.jsp">← Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
